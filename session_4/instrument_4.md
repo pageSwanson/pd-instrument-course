@@ -1,7 +1,7 @@
 ## Instrument audio effects
 
 ### waveform effects
-#### [clipping](https://en.wikipedia.org/wiki/Clipping_(audio)
+#### [clipping](https://en.wikipedia.org/wiki/Clipping_(audio))
 - waveform is amplified
 - but it's also forced to a threshold beyond which the signal is 'maxed-out'
 - a signal moving from 0 and back to 0 again over the following course...
@@ -19,7 +19,7 @@
     - `abs~`
 
 ### time-based effects
-#### [delays](https://en.wikipedia.org/wiki/Delay_(audio_effect)
+#### [delays](https://en.wikipedia.org/wiki/Delay_(audio_effect))
 - anywhere from short time to long time, typically longer time frame
 - the 'copy' of the signal starting at some time (buffer) is continuously behind by some other time (the delay)
 - we use a [delay line](https://en.wikipedia.org/wiki/Digital_delay_line) to achieve this
