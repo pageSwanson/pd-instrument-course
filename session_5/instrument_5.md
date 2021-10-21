@@ -11,8 +11,8 @@
 - to interact with the sub-patch from your primary patch, add inlets and outlets to the sub-patch window
     - 'inlet' objects are used to receive parameters from the main patch
     - 'outlet' objects are used to send data from the sub-patch
-    - adding a '\~' after the name of either of these will allow you to pass audio
-        - for audio, it's typical to avoid creating a 'dac\~' inside of your sub-patch
+    - adding a '~' after the name of either of these will allow you to pass audio
+        - for audio, it's typical to avoid creating a 'dac~' inside of your sub-patch
         - this way, all of your audio control is done in the primary patch
     - as you add these items to your sub-patch, you'll see the 'pd ...' object aquire inlets that can be used in the main patch
         - these are added in order from left to right
@@ -27,10 +27,10 @@
     - this window is where you'll define how this new object behaves
 - open the noise patch and click, drag, copy, and paste all of its contents to the new subpatch window
     - add 'inlets' for the parameters you want to manipulate
-    - remove the 'dac\~' objects and add a single 'outlet\~' for the audio signals in the patch
+    - remove the `dac~` objects and add a single `outlet~` for the audio signals in the patch
     - you should now see that your sub-patch object in the blank patch window should have markers indicating inputs/outputs
     - save the changes to the file
-- for the noise patch, I added 3 'inlet' objects and connected them to the bang, the multiplier number for the filter, and the right inlet for the delay object, respectively. I added one 'outlet\~' for the audio output to replace the 'dac\~'
+- for the noise patch, I added 3 'inlet' objects and connected them to the bang, the multiplier number for the filter, and the right inlet for the delay object, respectively. I added one `outlet~` for the audio output to replace the `dac~`
 - when you save the blank patch window (the primary window), your sub-patch will save along with it
 
 ### time-based effects

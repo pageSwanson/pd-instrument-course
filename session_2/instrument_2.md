@@ -56,7 +56,7 @@
 - in pure data, this object provides evenly distributed random values
 - values move regularly, and the frequencies present are audible
     - the values change quickly enough for us to hear
-- the pd object 'noise~' produces random frequencies present across a [normal distribution](https://en.wikipedia.org/wiki/Normal_distribution)
+- the pd object `noise~` produces random frequencies present across a [normal distribution](https://en.wikipedia.org/wiki/Normal_distribution)
 
 ### envelopes
 - using the line function, we can create a ramping value
@@ -77,11 +77,11 @@
 ### filtering
 - a [filter](https://en.wikipedia.org/wiki/Filter_(signal_processing)) limits the frequencies present in a signal
     - this is realized by attenuating (reducing the gain) of recurring periodic values (frequencies) present in the signal
-- in pd, a low pass filter object (lop~) is used to gain limit frequencies beyond the 'pass band'
+- in pd, a low pass filter object `lop~` is used to gain limit frequencies beyond the 'pass band'
     - the pass band represents the range of frequencies that will 'pass' through the filter with minimal attenuation
     - the limit of the band range is the 'cuttoff frequency', beyond which frequencies are attenuated
 - in pd, the cutoff frequency is provided at the right-hand inlet
-    - just like the osc~ object, this is a float value with the 'Hz' unit
+    - just like the `osc~` object, this is a float value with the 'Hz' unit
 
 ### message delays (bang ... bang!)
 - the delay object receives a bang and transmits another following a delay
