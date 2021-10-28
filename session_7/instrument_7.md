@@ -35,3 +35,4 @@
     - `vline~` with a message box input '0, 44100 1000'
         - starting position, ending position duration
 - we'll play all 44,100 samples over the course of 1 second this way
+- you can now click to recall the sample
