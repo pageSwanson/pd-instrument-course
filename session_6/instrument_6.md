@@ -7,4 +7,4 @@
 - a feedback loop which cancels out certain frequency portions that we want to 'cutoff' at the output
 - same idea as the feedback path for delay, but the purpose is to 'cancel' specific frequencies - not to reproduce the signal exactly as it came in
 - in pd
-    - `lop~`, `hip~`, `vcf~`
+    - `lop~`, `hip~`, `bp~`
